@@ -2,40 +2,36 @@
 
 A Pedagogical Experiment in Playwright with Vue+Quasar
 
-## Install the dependencies
-```bash
-yarn
-# or
-npm install
+## Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/en). The LTS version should be fine. You will also need the `npm` package manager (which comes with Node.js) or `yarn`. A development environment or IDE with TypeScript/JavaScript support will help. [Visual Studio Code](https://code.visualstudio.com/) is a good choice.
+
+## Execution
+
+Clone the repository and then set everything up:
+
+```shell
+npm ci
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
+The reason for `npm ci` over `npm install` is covered best in this [Stack Overflow answer](https://stackoverflow.com/a/53325242).
+
+Make sure to install the Playwright browsers:
+
+```shell
+npx playwright install
 ```
 
+You can start up a development server if you want to see how the application itself works.
 
-### Lint the files
-```bash
-yarn lint
-# or
-npm run lint
+```shell
+npm run dev
 ```
 
+To run the tests, you can just do this:
 
-### Format the files
-```bash
-yarn format
-# or
-npm run format
+```shell
+npm run test
 ```
 
-
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
+Note that this will start up a development server for you before the tests are run.
