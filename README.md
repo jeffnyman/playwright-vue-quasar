@@ -1,6 +1,6 @@
 # Jeff's Vue Quasar App (playwright-vue-quasar)
 
-A Pedagogical Experiment in Playwright with Vue+Quasar
+The focus here is Playwright within a Vue+Quasar context. To keep this idea pedagogically reproducible, I simply created a standard Vue and Quasar project, made a few tweaks to the internals and then provided tests.
 
 ## Prerequisites
 
